@@ -9,6 +9,9 @@ function Animation(): JSX.Element
   <>
     <Head>
       <title> Animation | Hangman </title>
+
+      <meta name="description" content="Animation" />
+      <meta name="keywords" content="Animation" />
     </Head>
 
     <div className="d-flex d-sm-flex justify-content-center align-items-center justify-content-sm-center align-items-sm-center aniDiv">

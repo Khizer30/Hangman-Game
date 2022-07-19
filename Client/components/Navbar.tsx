@@ -10,8 +10,10 @@ function Navbar(): JSX.Element
   <>
     <nav className="navbar navbar-light navbar-expand navBar">
       <div className="container-fluid">
-        <div className="logo">
-          <Image src={ logo } alt="Hangman Logo" title="Home" draggable="false" priority />
+        <div className="logo cursor">
+          <Link href="/" prefetch={ true }>
+            <Image src={ logo } alt="Hangman Logo" title="Home" draggable="false" priority />
+          </Link>
         </div>
       </div>
     </nav>

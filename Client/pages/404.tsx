@@ -7,6 +7,9 @@ function Error(): JSX.Element
   <>
     <Head>
       <title> 404 | Hangman </title>
+
+      <meta name="description" content="404" />
+      <meta name="keywords" content="404" />
     </Head>
 
     <div className="container-fluid d-flex d-sm-flex justify-content-center align-items-center justify-content-sm-center align-items-sm-center noPageContainer">

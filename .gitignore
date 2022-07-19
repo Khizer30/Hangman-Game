@@ -7,3 +7,5 @@ out
 build
 
 .vercel
+
+credential.json

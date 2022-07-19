@@ -197,6 +197,9 @@ function Home(props: SSRProps): JSX.Element
   <>
     <Head>
       <title> Home | Hangman </title>
+
+      <meta name="description" content="Hangman Game Homepage" />
+      <meta name="keywords" content="Hangman, Game, Homepage" />
     </Head>
 
   { (!start) &&

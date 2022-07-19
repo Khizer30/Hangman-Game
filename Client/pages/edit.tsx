@@ -42,13 +42,16 @@ function Edit(): JSX.Element
   // Handle Change
   const handleChange = (event: any): void =>
   {
-    if (event.target.name === "word" && event.target.value !== "")
+    let name: string = event.target.name ;
+    let value: string = event.target.value ;
+
+    if (name === "word" && value !== "")
     {
-      setInputs(values => ({ ...values, [event.target.name]: event.target.value.toUpperCase() })) ;
+      setInputs(values => ({ ...values, [name]: value.toUpperCase() })) ;
     }
     else
     {
-      setInputs(values => ({ ...values, [event.target.name]: event.target.value })) ;
+      setInputs(values => ({ ...values, [name]: value })) ;
     }
   }
   
@@ -107,34 +110,34 @@ function Edit(): JSX.Element
   const getData = async (url: string = ""): Promise<void> =>
   {
     const response: Response = await fetch(url, 
+    {
+      mode: "cors",
+      method: "GET",
+      headers: 
       {
-        mode: "cors",
-        method: "GET",
-        headers: 
-        {
-          "Content-Type": "application/json"
-        }
-      }) ;
-  
-      let res: ServerRes = await response.json() ;
-  
-      // Display Response
-      if (res.code === "200")
-      {
-        // Display Questions
-        let message: ResObj[] = JSON.parse(res.message) ;
-        let ques: string[] = [] ;
-        for (let x of message)
-        {
-          ques.push(x.word) ;
-        }
-        setQuestions(ques) ;
+        "Content-Type": "application/json"
       }
-      else
+    }) ;
+
+    let res: ServerRes = await response.json() ;
+
+    // Display Response
+    if (res.code === "200")
+    {
+      // Display Questions
+      let message: ResObj[] = JSON.parse(res.message) ;
+      let ques: string[] = [] ;
+      for (let x of message)
       {
-        setType("alert-danger") ;
-        setMes(res.message) ;
+        ques.push(x.word) ;
       }
+      setQuestions(ques) ;
+    }
+    else
+    {
+      setType("alert-danger") ;
+      setMes(res.message) ;
+    }
   }
 
   // Post Data
@@ -203,6 +206,9 @@ function Edit(): JSX.Element
   <>
     <Head>
       <title> Edit | Hangman </title>
+
+      <meta name="description" content="Edit Database" />
+      <meta name="keywords" content="Edit, Database, API" />
     </Head>
 
     <div className="container-fluid mainContainer">
