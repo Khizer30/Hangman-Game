@@ -1,0 +1,5 @@
+.gcloudignore
+node_modules/
+server.ts
+credential.json
+tsconfig.json

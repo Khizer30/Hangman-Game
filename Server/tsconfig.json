@@ -1,0 +1,15 @@
+{
+  "compilerOptions": 
+  {
+    "module": "commonjs",
+    "strict": false,
+    "removeComments": true,
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "noEmit": false,
+    "noEmitOnError": false,
+    "moduleResolution": "Node16"
+  }
+}

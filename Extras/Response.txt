@@ -1,0 +1,13 @@
+ADD === 1
+Success === 100
+Query Error === 101
+
+GET === 2
+Success === 200
+Query Error === 201
+
+REMOVE === 3
+Success === 300
+Query Error === 301
+
+Connection Error === 500

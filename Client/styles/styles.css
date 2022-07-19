@@ -1,0 +1,345 @@
+.navBar 
+{
+  border-bottom-style: solid ;
+  border-bottom-color: rgb(45,100,35) ;
+  min-height: 10vh ;
+}
+
+.logo 
+{
+  width: 10vh !important ;
+}
+
+.theBody 
+{
+  background: rgb(240,240,240) ;
+  height: 100vh ;
+  margin: 0% ;
+  display: flex ;
+  flex-direction: column ;
+}
+
+.theFooter
+{
+  padding-top: 5vh ;
+  margin-top: auto ;
+  min-height: 10vh ;
+  background: rgb(45,100,35) ;
+  text-align: center ;
+}
+
+.footerPar
+{
+  font-size: 13px ;
+  color: rgb(240,240,240) ;
+  font-family: Lato, sans-serif ;
+}
+
+.mainContainer 
+{
+  font-family: Lato, sans-serif ;
+  text-align: center ;
+  font-size: 17px ;
+}
+
+.heading 
+{
+  font-weight: bold ;
+  font-size: 35px ;
+}
+
+.marginTB 
+{
+  margin-top: 1vh ;
+  margin-bottom: 1vh ;
+}
+
+.bold 
+{
+  font-weight: bold ;
+}
+
+.width100 
+{
+  width: 100% ;
+}
+
+.displayNone
+{
+  display: none ;
+}
+
+.invisible
+{
+  visibility: hidden ;
+}
+
+.form-select:focus
+{
+  box-shadow: none ;
+  outline: 1.5px ridge rgb(45,100,35) ;
+  border-radius: 5px ;
+}
+
+.form-control:focus
+{
+  box-shadow: none ;
+  outline: 1.5px ridge rgb(45,100,35) ;
+  border-radius: 5px ;
+}
+
+.btn:focus
+{
+  box-shadow: none ;
+  outline: none ;
+}
+
+.btn:active:focus
+{
+  box-shadow: none ;
+  outline: 1.5px ridge rgb(45,100,35) ;
+  border-radius: 5px ;
+}
+
+.upperCase
+{
+  text-transform: uppercase ;
+}
+
+.aniObject
+{
+  width: 50vh ;
+  animation: myAni 1s ease 0s infinite alternate backwards ;
+}
+
+.aniDiv 
+{
+  min-height: 77vh ;
+}
+
+@keyframes myAni 
+{
+	0% 
+  {
+		transform: scale(0.5) ;
+	}
+
+	100% 
+  {
+		transform: scale(1) ;
+	}
+}
+
+.alignCenter
+{
+  text-align: center !important ;
+  align-items: center !important ;
+}
+
+.homeWord 
+{
+  font-family: Lato, sans-serif ;
+  font-weight: bold ;
+  font-size: 7vh ;
+}
+
+.homeHint 
+{
+  font-size: 3vh ;
+  font-family: Lato, sans-serif ;
+  color: rgb(45,100,35) ;
+  font-weight: bold ;
+}
+
+.homeInput
+{
+  margin-top: 1vh ;
+  margin-bottom: 1vh ;
+  font-family: Lato, sans-serif ;
+  text-transform: capitalize ;
+  font-size: 17px ;
+  font-weight: bold ;
+}
+
+.homeUsed 
+{
+  font-size: 2.5vh ;
+  font-family: Lato, sans-serif ;
+  font-weight: bold ;
+  text-decoration: line-through ;
+}
+
+.homeImage 
+{
+  width: 50vh !important ;
+}
+
+.homeLabel
+{
+  font-family: Lato, sans-serif ;
+  font-weight: bold ;
+  font-size: 15px ;
+}
+
+.messageSpan
+{
+  font-family: Lato, sans-serif ;
+  font-size: 17px ;
+}
+
+.homeBtn 
+{
+  width: 150px ;
+  height: 50px ;
+  font-size: 17px ;
+  text-align: center ;
+  background: rgb(45,100,35) ;
+  color: rgb(240,240,240) ;
+  font-family: Lato, sans-serif ;
+  border-radius: 100px ;
+  border: 1px solid rgb(33,37,41) ;
+
+  transition-property: background ;
+  transition-duration: 0.25s ;
+  transition-timing-function: linear ;
+}
+
+.homeBtn:hover
+{
+  background: rgb(60,135,50) ;
+}
+
+.homeBtn:active:hover
+{
+  outline-color: rgb(45,100,35) ;
+  outline-style: outset ;
+  outline-width: 1px ;
+}
+
+.resetIcon 
+{
+  margin-right: 5px ;
+}
+
+.resetBtn 
+{
+  width: 90px ;
+  height: 40px ;
+  font-size: 15px ;
+  font-weight: bold ;
+  text-align: center ;
+  background: rgb(45,100,35) !important ;
+  color: rgb(240,240,240) ;
+  font-family: Lato, sans-serif ;
+  border-radius: 100px ;
+  border: 1px solid rgb(33,37,41) ;
+
+  transition-property: background ;
+  transition-duration: 0.25s ;
+  transition-timing-function: linear ;
+}
+
+.resetBtn:hover
+{
+  background: rgb(60,135,50) !important ;
+}
+
+.resetBtn:active:hover
+{
+  outline-color: rgb(45,100,35) ;
+  outline-style: outset ;
+  outline-width: 1px ;
+}
+
+.resetDiv
+{
+  text-align: left ;
+  margin-bottom: -1.5vh ;
+}
+
+.noPageContainer 
+{
+  min-height: 77.25vh ;
+  background: rgb(45,100,35) ;
+}
+
+.noPageH1 
+{
+  color: rgb(240,240,240) ;
+  font-family: Lato, sans-serif ;
+  font-size: 40vh ;
+}
+
+.noPageH2 
+{
+  color: rgb(240,240,240) ;
+  font-family: Lato, sans-serif ;
+  font-size: 10vh ;
+}
+
+.startContainer 
+{
+  margin-top: 0px ;
+  margin-bottom: 0px ;
+  background: rgb(45,100,35) ;
+  min-height: 77.25vh ;
+}
+
+.startDiv 
+{
+  color: rgb(240,240,240) ;
+  font-family: Lato, sans-serif ;
+  text-align: center ;
+  font-weight: bold ;
+}
+
+.startH1 
+{
+  font-size: 7vh ;
+  padding-top: 27vh ;
+  font-weight: bold ;
+}
+
+.startH2 
+{
+  font-size: 3vh ;
+  margin-top: 1vh ;
+  margin-bottom: 1vh ;
+  font-weight: bold ;
+}
+
+.startBtn 
+{
+  height: 50px ;
+  width: 250px ;
+  background: rgb(240,240,240) !important ;
+  margin-top: 1vh ;
+  margin-bottom: 1vh ;
+  border-radius: 50px ;
+  border: 1px solid rgb(45,100,35) ;
+  font-weight: bold ;
+  font-size: 20px ;
+  color: rgb(45,100,35) ;
+  text-align: center ;
+
+  transition-property: background ;
+  transition-duration: 0.25s ;
+  transition-timing-function: linear ;
+}
+
+.startBtn:hover
+{
+  background: rgb(220,220,220) !important ;
+}
+
+.startBtn:active:hover
+{
+  outline-color: rgb(45,100,35) ;
+  outline-style: outset ;
+  outline-width: 1px ;
+}
+
+.cursor
+{
+  cursor: pointer ;
+}
