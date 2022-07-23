@@ -235,11 +235,16 @@ function Home(props: SSRProps): JSX.Element
 
             <Message message={ mes } type={ type } />
 
-            <div className="form-floating mt-3 mb-3">
+            <div className="d-flex d-sm-flex justify-content-center align-items-center justify-content-sm-center align-items-sm-center">
+              
               <input name="char" type="text" maxLength={ 1 } pattern="^[A-Z]*$" 
               placeholder="Enter a Letter" inputMode="text" required autoFocus className="form-control homeInput"
               onChange={ handleChange } value={ char } />
-              <label htmlFor="char" className="homeLabel"> Enter a Letter </label>
+
+              <button onClick={ handleSubmit } type="button" className="btn btn-primary d-flex d-sm-flex justify-content-center align-items-center justify-content-sm-center align-items-sm-center submit">
+                <i className="fas fa-angle-double-right submitText"></i>
+              </button>
+
             </div>
 
             <p className="homeUsed"> { (question.used.length === 0) ? <br /> : question.used.map(usedMapper) } </p>

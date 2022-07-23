@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "scripts": 
   {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "tsc --target ESNext --removeComments true --module commonjs --moduleResolution Node16 server.ts",
+    "dev": "cls && nodemon server.ts"
   },
   "dependencies": 
   {
     "cors": "^2.8.5",
     "express": "^4.18.1",
-    "firebase-admin": "^11.0.0"
+    "firebase-admin": "^11.0.0",
+    "nodemon": "^2.0.18",
+    "ts-node": "^10.9.1"
   },
   "devDependencies": 
   {

@@ -1,11 +1,11 @@
 const express = require("express") ;
 const cors = require("cors") ;
-const { initializeApp, applicationDefault } = require("firebase-admin/app") ;
+const { initializeApp, applicationDefault, cert } = require("firebase-admin/app") ;
 const { getFirestore } = require("firebase-admin/firestore") ;
 const { json } = require("express") ;
 
 // ...
-// const serviceAccount = require("./credential.json") ;
+const serviceAccount = require("./credential.json") ;
 
 const app = express() ;
 const port = process.env.PORT || 8080 ;
@@ -15,10 +15,10 @@ app.use(cors()) ;
 app.use(json()) ;
 
 // ...
-// initializeApp({ credential: cert(serviceAccount) }) ;
+initializeApp({ credential: cert(serviceAccount) }) ;
 
 // Firestore
-initializeApp({ credential: applicationDefault() }) ;
+// initializeApp({ credential: applicationDefault() }) ;
 const db = getFirestore() ;
 
 // Check Input
